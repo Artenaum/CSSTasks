@@ -1,0 +1,31 @@
+.center {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.progress {
+	width: 500px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: gray;
+}
+
+.fill {
+	width: 0%;
+	height: 100%;
+	background-color: rgb(0, 179, 255);
+	border-radius: 50px;
+	animation: loading 3s linear 0s infinite;
+}
+
+@keyframes loading {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
