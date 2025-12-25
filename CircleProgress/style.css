@@ -1,0 +1,35 @@
+.center {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.progressbar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(green calc(var(--progress) * 1%), lightgreen 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progressbar::before {
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: beige;
+	z-index: 1;
+}
+
+.percentage {
+	position: absolute;
+	font-size: 30px;
+	color: black;
+	font-weight: bold;
+	z-index: 2;
+}
